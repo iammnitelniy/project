@@ -1,0 +1,92 @@
+/* РАСПОЛАГАЕМ КАРТЫ ТОВАРА ПО СЕТКЕ */
+/* делаем сетку(грид), которую делим на 12 частей чтобы их разделить на доли */
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1);
+    background-color: rgb(36, 35, 35);
+}
+
+
+/* делим панели по частям(с какой по какую) */
+.left-bar{
+    grid-column: 1/3;
+
+}
+.container{
+    grid-column: 3/11;
+}
+
+.right-bar{
+    grid-column: 11/13;
+}
+
+/* Обратимся к тегам p в левойи правой колонке
+Внутри::
+1. margin - отступвнутри
+2. пэдинги- внешний отступ от элементов
+3. border-style-это стиль границы
+4.Видз-ширина границы
+*/
+.left-bar p,
+.right-bar p {
+    margin: 1em;
+    padding: 1em;
+    border-style: solid;
+    border-width: 0.5px;
+    color:rgb(202, 138, 19);
+    border-color: rgb(202, 138, 19);
+    
+}
+
+/* медиа-запрос для разрешения планшета, меняем доли для отображения */
+@media (max-width: 900px) {
+    .main-container {
+    grid-template-rows: repeat(3);
+}
+.left-bar{
+    grid-column: 1/13;
+    grid-row: 1/2
+
+}
+.container{
+    grid-column: 1/13;
+    grid-row: 2/3;
+}
+
+.right-bar{
+    grid-column: 1/13;
+    grid-row: 3/4;
+    padding-left: 1.5em;
+}
+}
+
+/* медиа запрос для разрешения смартфона,
+меняем доли для отображения */
+ @media (max-width: 600px) {
+    .main-container {
+    grid-template-rows: repeat(3);
+}
+.left-bar{
+    grid-column: 1/13;
+    grid-row: 1/2
+
+}
+.container{
+    grid-column: 1/13;
+    grid-row: 2/3;
+}
+
+.right-bar{
+    grid-column: 1/13;
+    grid-row: 3/4;
+    padding-left: 1.5em;
+}
+/* убираем левый и правый отступ для телефона (инлайн)  */
+.card{
+    margin-inline: 0;
+}
+}
+.card>.info {
+    text-align: center;
+}

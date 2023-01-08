@@ -1,0 +1,62 @@
+/* НАЧАЛО РАБОТЫ С КАРТАМИ ТОВАРА */
+/* обнуляем стандартные значения браузера */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* делаем сетку(грид) с колонками и строками */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3);
+}
+.info a {
+    color: rgb(202, 138, 19);
+    text-decoration: none;
+}
+
+/* отступ для карточек товара */
+.card {
+     margin: 1.5em;  
+}
+/* ширина самих картинок */
+.card img{
+    width: 100%;
+}
+
+/* медиа-запрос для разрешения планшета */
+@media (max-width: 800px) {
+    .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5);
+}
+}
+
+/* медиа запрос для разрешения смартфона */
+@media (max-width: 600px) {
+    .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9);
+}
+/* убираем левый и правый отступ для телефона (инлайн) */
+.card{
+    margin-inline: 0;
+}
+}
+.card>.info {
+    text-align: center;
+}
+.card p {
+    margin: 0.5em;
+}
+button {
+    border: none;
+color: rgb(202, 138, 19);
+background-color: azure;
+padding: 12px 21px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+}
