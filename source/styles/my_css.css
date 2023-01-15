@@ -1,103 +1,125 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+
 body {
-    font-family: Poppins, serif;
-    background: linear-gradient(150deg, #0A174C 0%, #BDB2A8 100%);
+    font-family: Merriweather;
+   background-color:#d8d2c7;
+font-size: large  
+
 }
 p {
-    color: #f3e2d3; 
+    color: #8F7F63;
+    
 }
-#panel {
-    margin-top: -1.5em;
+#navbar {
+    color: #8F7F63;
 }
+  
+
 .nav-link {
-    color: rgb(230, 238, 235);
+    color:#8F7F63;
+
+    margin-inline: 1em;
+
 }
 
-.navbar-nav .nav-link.active { color: rgba(93, 102, 109, 0.575);
+.nav-link:hover {
+    color: #8f7f638c;
+}
+
+.navbar-nav .nav-link.active { 
+    color: #8f7f6383;
 
 }
 
 .navbar-brand img {
     width: 40px;
 }
+
 .navbar-toggler {
-    background-color: rgb(150, 145, 145);
-}
-.sidebar {
-    color: rgb(197, 206, 203);
-    background: linear-gradient(270deg, #0A174C 0%, #BDB2A8 100%);
+    background-color: #c7b79c85;
+
 
 }
 
-.btn-outline-primary {
-    color: rgb(197, 206, 203);
-    border-color: rgb(197, 206, 203);
-}
+.card-img-top {
+    
+    padding: 1em;
+    
+    }
 
-.card {
-    background: linear-gradient(270deg, #0A174C 0%, #BDB2A8 100%);
-    color: #f3e2d3;
-}
 
-.btn-primary{
-    background-color: #0d2279;
+.about {
+    width: 100%;
+    
+}
+.text-about>p{
+    color: #372D61;
+   width: 50%;
+   height: max-content;
+   font-size: x-large
+   
     
 }
 
-
-.card a {
-    text-decoration: none;
-    color: #f3e2d3;
-}
 
 .slide-text,
  .footer-text {
-    color: #f3e2d3;
+    color: #8F7F63;
     margin: auto auto;
+    
+    
+}
+.card {
+    background-color:#ECE7DE;
+}
+
+.card a {
+    text-decoration: none;
+    color: #372D61;
+    
+    
+    
+}
+.btn-primary {
+    border-radius: 8px;
+    background-color: #6B6A70;
+    color: #ECE9DE;
+    border:#8C7241;
+    font-family: Roboto;
+    font-size: x-large;
+    margin: 0 auto;
+    display: block;
+}
+.btn-primary:hover {
+    background-color:#6b6a7049;
     
 }
 
+#digit {
+    color:#ECE7DE
+}
+#digit:hover {
+    color:#8F7F63
+}
 
-footer{
-    background: linear-gradient(60deg, #0A174C 0%, #BDB2A8 100%);
-
+footer {
+background-color:#d8d2c7;
 }
 .media-links{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.call-anim{
-    animation: myAnim 4s ease-out 0s infinite normal both;
+.place {
+    height: 200px;
 }
-    @keyframes myAnim {
-        0%,
-        100% {
-            transform: translateX(0%);
-            transform-origin: 50% 50%;
-        }
-    
-        15% {
-            transform: translateX(-30px) rotate(-6deg);
-        }
-    
-        30% {
-            transform: translateX(15px) rotate(6deg);
-        }
-    
-        45% {
-            transform: translateX(-15px) rotate(-3.6deg);
-        }
-    
-        60% {
-            transform: translateX(9px) rotate(2.4deg);
-        }
-    
-        75% {
-            transform: translateX(-6px) rotate(-1.2deg);
-        }
-    }
-
+.contacts>p{
+    color: #372D61;
+    font-style: bold;
+}
 
 @media (max-width: 755px) {
     
