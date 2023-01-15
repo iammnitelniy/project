@@ -1,2 +1,1 @@
-# project
-My way
+# project_shop
